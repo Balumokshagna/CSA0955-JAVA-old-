@@ -1,0 +1,72 @@
+import java.util.*;  
+public class Javalist {  
+    public static void main(String args[])  
+    {  
+  
+        // here create a List  
+        List<String> al = new ArrayList<>();  
+  
+        // Now add the elements in the List  
+        al.add("BMW");  
+        al.add("Hundai");  
+        al.add("Toyota");  
+        al.add("Swift");  
+  
+        // Iterating the List  
+        // element using for-each loop  
+        for (String cars : al)  
+            System.out.println(cars);  
+    }  
+}  
+Output:
+BMW
+Hundai
+Toyota
+Swift
+import java.util.*;  
+class JavaMap {  
+    public static void main(String args[])  
+    {  
+  
+        // Creating object for a Map.  
+        Map<String, Integer> map  
+            = new HashMap< String, Integer>();  
+  
+        // Adding Elements using Map.  
+        map.put( "Rajat", 101);  
+        map.put("Shyam", 102);  
+        map.put("Rahul", 103);  
+        map.put("Krishna", 104);  
+        // here, elements may traverse in any order  
+        for (Map.Entry m : map.entrySet()) {  
+            System.out.println(m.getKey() + " "  
+                               + m.getValue());  
+        }  
+    }  
+}  
+Output:
+Rahul 103
+Shyam 102
+Krishna 104
+Rajat 101
+import java.util.*;  
+public class JavaSet {  
+  
+    public static void main(String[] args)  
+    {  
+        // Set demonstration via using HashSet  
+        Set<String> Set = new HashSet<String>();  
+  
+        // Adding some Elements   
+        Set.add("Java");  
+        Set.add("Python");  
+        Set.add("DBMS");  
+        Set.add("Machine Learning");  
+        Set.add("Operating System");  
+  
+        // Here Set follows unordered way.  
+        System.out.println(Set);  
+    }  
+}  
+Output:
+[Java, Operating System, DBMS, Machine Learning, Python]
